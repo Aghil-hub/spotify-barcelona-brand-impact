@@ -68,6 +68,8 @@ Two specifications were used: a **value-weighted market index** and the **S&P 50
 | r/soccer | 116 | 3.0 | Most balanced — 20% positive, 20% negative |
 | r/football | 60 | 10.5 | Most negative — 32% negative, only 8% positive |
 
+![Sentiment by subreddit](images/sentiment_by_subreddit.png)
+
 ### Pipeline
 
 ```
@@ -89,6 +91,10 @@ Scrape (PRAW) → Clean → RoBERTa Inference → Confidence Filter (≥60%) →
 | Positive | 18% | 6% |
 | Uncertain | 25% | 20% |
 | **Net sentiment (polar)** | **+1.4%** | **−70.8%** |
+
+![Sentiment distribution](images/sentiment_distribution.png)
+
+![Net sentiment comparison](images/net_sentiment_comparison.png)
 
 ### Hypotheses
 
@@ -125,6 +131,10 @@ Retrieve WRDS Data → Merge Datasets → Estimate Market Model (OLS) → Calcul
 |---|---|---|
 | Value-Weighted Market Index | **+2.21%** | Positive |
 | S&P 500 | **+4.15%** | Positive |
+
+![CAR - value weighted](images/car_value_weighted.png)
+
+![CAR - S&P 500](images/car_sp500.png)
 
 Both models agree: the announcement coincided with positive abnormal returns. The market appeared to view the deal as value-creating in the short run.
 
