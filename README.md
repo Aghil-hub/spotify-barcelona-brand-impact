@@ -178,5 +178,5 @@ spotify-barcelona-sponsorship-analysis/
 
 ## About
 
-Personal marketing analytics project combining NLP and financial event study methods.  
+Marketing analytics project combining NLP and financial event study methods.  
 Tools: Python, Google Colab, WRDS.
